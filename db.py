@@ -36,10 +36,10 @@ def commit_changes():
     conn.commit()
 
 
-setup_table()
+# setup_table()
 
 # create_employee("Danny", "Lodge", "Dlogdge@corpemail.com", "Systems Developer", 52, 137, True)
 # create_employee("Samuel", "Jenkins", "Sjenki@corpemail.com", "Support Engineer", 12, 437, True)
 # print(view_all_records())
 
-conn.commit()
+# conn.commit()
