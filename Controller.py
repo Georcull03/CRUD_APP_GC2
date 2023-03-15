@@ -10,6 +10,17 @@ import db
 def start_app():
     '''runs the app'''
 
+    start_menu = """
+    Welcome to the EH, what would you like to do with employe information? 
+    1. Create a record
+    2. Read a record by ID
+    3. Read all records
+    4. Update a record
+    5. Delete a record
+    6. Delete all records
+    7. Exit
+    """
+
     print(start_menu)
     exit = False
     while not exit:
@@ -74,18 +85,6 @@ def delete_a_record():
 def delete_records():
     '''deletes all orders in database'''
     return delete_all()
-
-start_menu = """
-    Welcome to the EH, what would you like to do with employe information? 
-    1. Create a record
-    2. Read a record by ID
-    3. Read all records
-    4. Update a record
-    5. Delete a record
-    6. Delete all records
-    7. Exit
-    """
-
 
 # print(get_all())
 start_app()
