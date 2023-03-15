@@ -15,18 +15,25 @@ def start_app():
     while not exit:
         choice = int(input('Please choose a mode to continue: '))
         if choice == 1:
+            animationscreen('loading')
             print(create_records())
         elif choice == 2:
+            animationscreen('loading')
             print(read_id())
         elif choice == 3:
+            animationscreen('loading')
             print(read_all())
         elif choice == 4:
+            animationscreen('loading')
             print(update_a_record())
         elif choice == 5:
+            animationscreen('loading')
             print(delete_a_record())
         elif choice == 6:
+            animationscreen('loading')
             print(delete_records())
         else:
+            animationscreen('loading')
             exit = True
             db.commit_changes()
             print('Thanks for using EH!!')

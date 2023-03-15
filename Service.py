@@ -3,6 +3,9 @@
 # and these will take in data and return data
 
 import db
+import sys
+from os import *
+import time
 
 def get_all():
     '''shows all Records in database'''
@@ -41,3 +44,23 @@ def delete_all():
     query = 'DELETE FROM employees WHERE employee_id > 0;'
     db.run_query(query)
     return 'All Records deleted'
+
+def clear():
+    '''function to clear the screen'''
+	# for windows
+    if name == "nt":
+        _ = system("cls")
+	# for mac and linux(here, os.name is "posix")
+    else:
+        _ = system("clear")
+                
+def animationscreen(text):
+    '''function to create progress bar'''
+    clear()
+    print(text,"\n")
+    for i in range(11):
+        time.sleep(0.1)
+        progress = "[ " + "■" * i + "□" * (10 - i) + " ]"
+        sys.stdout.write("\033[F\033[K")  # Clear current line
+        print(progress)
+    clear()
