@@ -8,6 +8,10 @@ from Service import *
 import db
 
 def start_app():
+
+    # check if there are parameters provided, if not show the menu
+    # if parameter is mode the skip menu and run that mode
+
     '''runs the app'''
 
     start_menu = """
@@ -23,8 +27,20 @@ def start_app():
 
     print(start_menu)
     exit = False
+
+    # if (!param) then
+    #     choice = int(input('kkkk'))
+    # else if param > 0 && param < 7
+    #     choice = param
+    #     print('Running automatically with option ' + param)
+    # else    
+    #     error exit.....
+    #     exit true
+    
+
     while not exit:
-        choice = int(input('Please choose a mode to continue: '))
+        # choice = int(input('Please choose a mode to continue: '))
+        choice = 3
         if choice == 1:
             animationscreen('Loading')
             print(create_records())
