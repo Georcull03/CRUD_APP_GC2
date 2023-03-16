@@ -39,8 +39,8 @@ def start_app():
     
 
     while not exit:
-        # choice = int(input('Please choose a mode to continue: '))
-        choice = 3
+        choice = int(input('Please choose a mode to continue: '))
+        # choice = 3
         if choice == 1:
             animationscreen('Loading')
             print(create_records())
@@ -50,7 +50,6 @@ def start_app():
         elif choice == 3:
             animationscreen('Loading')
             print(read_all())
-            exit = True
         elif choice == 4:
             animationscreen('Loading')
             print(update_a_record())
