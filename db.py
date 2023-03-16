@@ -27,7 +27,7 @@ def view_all_records():
 
 def create_employee(forename, surname, email, job_title, num_phone_awards, city_location, manager_employee_id, currently_employed):
     '''creates an Employee'''
-    query = f"INSERT INTO employees (forename, surname, email, job_title, num_phone_awards, manager_employee_id, currently_employed) VALUES ('{forename}', '{surname}', '{email}', '{job_title}', {num_phone_awards}, '{city_location}', {manager_employee_id}, '{currently_employed}');"
+    query = f"INSERT INTO employees (forename, surname, email, job_title, num_phone_awards, city_location, manager_employee_id, currently_employed) VALUES ('{forename}', '{surname}', '{email}', '{job_title}', {num_phone_awards}, '{city_location}', {manager_employee_id}, '{currently_employed}');"
     run_query(query)
     return True
 
