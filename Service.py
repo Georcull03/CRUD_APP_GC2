@@ -20,7 +20,7 @@ def read_by_id(id):
 
 def create_record(forename, surname, email, job_title, num_phone_awards, city_location, manager_employee_id, currently_employed):
     '''Creates an employee in database'''
-    query = f"INSERT INTO employees (forename, surname, email, job_title, num_phone_awards, city_location, manager_employee_id, currently_employed) VALUES ('{forename}', '{surname}', '{email}', '{job_title}', {num_phone_awards}, '{city_location}' {manager_employee_id}, '{currently_employed}');"
+    query = f"INSERT INTO employees (forename, surname, email, job_title, num_phone_awards, city_location, manager_employee_id, currently_employed) VALUES ('{forename}', '{surname}', '{email}', '{job_title}', {num_phone_awards}, '{city_location}', {manager_employee_id}, '{currently_employed}');"
     db.run_query(query)
     return 'Record created'
 
